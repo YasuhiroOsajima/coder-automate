@@ -3,9 +3,6 @@ firewall-cmd --reload
 
 podman build -t code-server-build:${CODE_SERVER_VERSION} --build-arg CODE_SERVER_VERSION="${CODE_SERVER_VERSION}"  .
 
-cp -fL ${PRIVATE_KEY_PATH} certs/privkey.pem
-cp -fL ${CERT_FILE_PATH} certs/cert.pem
-
 podman run -d \
 --name code-server-build \
 --publish ${CODE_SERVER_PORT}:8080 \
