@@ -1,0 +1,33 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "files.eol": "\n",
+  "terminal.integrated.fontSize": 10,
+  "workbench.editor.enablePreview": false,
+  // Color scheme
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Darcula",
+  "editor.fontSize": 12,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#00ff6a"
+  },
+  "git.autofetch": true,
+  "window.zoomLevel": 0,
+  "terminal.integrated.rendererType": "dom",
+  // GO
+  "go.toolsEnvVars": {
+    "GO111MODULE": "on"
+  },
+  "go.gopath": "/root/.gvm/pkgsets/go1.13.8/global",
+  "go.goroot": "/root/.gvm/gos/go1.13.8",
+  "go.formatOnSave": true,
+  "go.useLanguageServer": true,
+  // Python
+  "python.jediEnabled": false,
+  "python.pythonPath": "venv/bin/python",
+  "python.linting.flake8Enabled": true
+}
