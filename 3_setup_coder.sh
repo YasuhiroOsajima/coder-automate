@@ -1,11 +1,10 @@
-firewall-cmd --zone=public --add-port=${CODE_SERVER_PORT}/tcp --permanent
 firewall-cmd --zone=public --add-masquerade --permanent
 firewall-cmd --reload
 
 podman build -t code-server-build:${CODE_SERVER_VERSION} --build-arg CODE_SERVER_VERSION="${CODE_SERVER_VERSION}"  .
 
-cp ${PRIVATE_KEY_PATH} certs/privkey.pem
-cp ${CERT_FILE_PATH} certs/cert.pem
+cp -fL ${PRIVATE_KEY_PATH} certs/privkey.pem
+cp -fL ${CERT_FILE_PATH} certs/cert.pem
 
 podman run -d \
 --name code-server-build \
@@ -19,6 +18,8 @@ localhost/code-server-build:${CODE_SERVER_VERSION} \
 --cert="/.certs/cert.pem" \
 --cert-key="/.certs/privkey.pem"
 
+podman exec code-server-build bash ~/myfiles/install_go.sh
+podman exec code-server-build bash ~/myfiles/install_python3.sh
 podman exec code-server-build bash ~/myfiles/install_vs_extensions.sh
 
 podman stop code-server-build
