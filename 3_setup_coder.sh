@@ -17,6 +17,7 @@ localhost/code-server-build:${CODE_SERVER_VERSION} \
 
 podman exec code-server-build bash ~/myfiles/install_go.sh
 podman exec code-server-build bash ~/myfiles/install_python3.sh
+podman exec code-server-build bash ~/myfiles/install_nodejs.sh
 podman exec code-server-build bash ~/myfiles/install_vs_extensions.sh
 
 podman stop code-server-build
