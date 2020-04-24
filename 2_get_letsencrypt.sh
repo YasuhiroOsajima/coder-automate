@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git clone https://github.com/certbot/certbot
 
 firewall-cmd --zone=public --add-service=http

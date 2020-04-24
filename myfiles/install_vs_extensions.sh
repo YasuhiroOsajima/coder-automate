@@ -3,12 +3,8 @@
 # Visual Studio Code :: Package list
 pkglist=(
 CoenraadS.bracket-pair-colorizer-2
-danields761.dracula-theme-from-intellij-pythoned
 DavidAnson.vscode-markdownlint
-magicstack.MagicPython
 mechatroner.rainbow-csv
-ms-python.python
-ms-vscode.Go
 PKief.material-icon-theme
 redhat.vscode-yaml
 rokoroku.vscode-theme-darcula

@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git clone https://github.com/riywo/ndenv ~/.ndenv
 
 echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bashrc
