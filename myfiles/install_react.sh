@@ -22,3 +22,10 @@ for var in ${pkglist[@]}
 do
     code-server --install-extension $var
 done
+
+
+
+# yarn add -D eslint eslint-plugin-react @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+# https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint/01-eslint/.eslintrc.js
+# https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint/03-mysetting
