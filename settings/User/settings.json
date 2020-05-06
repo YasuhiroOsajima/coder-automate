@@ -1,12 +1,13 @@
 {
   "workbench.startupEditor": "newUntitledFile",
-  "files.eol": "\n",
-  "terminal.integrated.fontSize": 10,
   "workbench.editor.enablePreview": false,
-  // Color scheme
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 0,
+  // Theme
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Darcula",
+  // Editor
+  "files.eol": "\n",
   "editor.fontSize": 12,
   "editor.tabSize": 4,
   "editor.wordWrap": "on",
@@ -15,9 +16,12 @@
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#00ff6a"
   },
-  "git.autofetch": true,
-  "window.zoomLevel": 0,
+  // Terminal
   "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.fontSize": 10,
+  "git.autofetch": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
   // GO
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
