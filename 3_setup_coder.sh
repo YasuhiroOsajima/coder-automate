@@ -15,6 +15,7 @@ podman run -d \
   --user $(id -u):$(id -g) \
   localhost/code-server-build:${CODE_SERVER_VERSION} \
   --auth none \
+  --disable-updates \
   --cert="/.certs/cert.pem" \
   --cert-key="/.certs/privkey.pem"
 
