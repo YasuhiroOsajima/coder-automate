@@ -29,3 +29,5 @@ done
 
 # https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint/01-eslint/.eslintrc.js
 # https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint/03-mysetting
+
+# yarn add react-router react-router-dom @types/react-router @types/react-router-dom
