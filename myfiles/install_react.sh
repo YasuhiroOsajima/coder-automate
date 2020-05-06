@@ -31,3 +31,4 @@ done
 # https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint/03-mysetting
 
 # yarn add react-router react-router-dom @types/react-router @types/react-router-dom
+# yarn add react-helmet @types/react-helmet
