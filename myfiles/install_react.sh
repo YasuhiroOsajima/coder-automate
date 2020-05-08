@@ -32,3 +32,5 @@ done
 
 # yarn add react-router react-router-dom @types/react-router @types/react-router-dom
 # yarn add react-helmet @types/react-helmet
+
+# yarn add bootstrap @types/bootstrap

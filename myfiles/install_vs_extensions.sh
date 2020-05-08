@@ -10,7 +10,6 @@ redhat.vscode-yaml
 rokoroku.vscode-theme-darcula
 streetsidesoftware.code-spell-checker
 vscodevim.vim
-yzhang.markdown-all-in-one
 )
 
 for var in ${pkglist[@]}
