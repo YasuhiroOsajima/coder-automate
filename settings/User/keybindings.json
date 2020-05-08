@@ -178,5 +178,10 @@
         "key": "ctrl+k ctrl+j",
         "command": "-editor.unfoldAll",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFindWidget",
+        "when": "terminalFindWidgetFocused || terminalFocus"
     }
 ]
