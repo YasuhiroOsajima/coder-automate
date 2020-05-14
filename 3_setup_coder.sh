@@ -17,7 +17,6 @@ podman run -d \
   --mount type=bind,source="${PWD}/certs",target="/.certs" \
   --user $(id -u):$(id -g) \
   localhost/code-server-build:${CODE_SERVER_VERSION} \
-  --auth none \
   --disable-updates \
   --cert="/.certs/cert.pem" \
   --cert-key="/.certs/privkey.pem"
@@ -25,3 +24,5 @@ podman run -d \
 podman exec code-server-build bash ~/myfiles/install_vs_extensions.sh
 podman stop code-server-build
 podman start code-server-build
+
+podman logs code-server-build
