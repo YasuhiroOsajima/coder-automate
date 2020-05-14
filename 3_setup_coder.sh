@@ -12,6 +12,7 @@ podman build -t code-server-build:${CODE_SERVER_VERSION} \
 podman run -d \
   --name code-server-build \
   --publish ${CODE_SERVER_PORT}:8080 \
+  -e PASSWORD=${CODE_SERVER_PASSWORD} \
   --mount type=bind,source="${PWD}/myfiles",target="/root/myfiles" \
   --mount type=bind,source="${PWD}/settings",target="/root/.local/share/code-server" \
   --mount type=bind,source="${PWD}/certs",target="/.certs" \
