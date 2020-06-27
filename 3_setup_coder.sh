@@ -18,7 +18,6 @@ podman run -d \
   --mount type=bind,source="${PWD}/certs",target="/.certs" \
   --user $(id -u):$(id -g) \
   localhost/code-server-build:${CODE_SERVER_VERSION} \
-  --disable-updates \
   --cert="/.certs/cert.pem" \
   --cert-key="/.certs/privkey.pem"
 
