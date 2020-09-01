@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GO_VERSION=go1.14.4
+GO_VERSION=go1.14.7
 
 apt update
 apt install bison gcc make -y

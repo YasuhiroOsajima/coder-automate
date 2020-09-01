@@ -1,5 +1,5 @@
 #!/bin/sh
 
-podman exec code-server-build bash ~/myfiles/install_python3.sh
-podman stop code-server-build
-podman start code-server-build
+docker exec code-server bash ~/myfiles/install_python3.sh
+docker stop code-server
+docker start code-server

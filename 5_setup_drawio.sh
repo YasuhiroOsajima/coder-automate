@@ -10,9 +10,9 @@ DRAW_IO_VERSION=13.1.1
 firewall-cmd --zone=public --add-service=http
 firewall-cmd --zone=public --add-service=https --permanent
 
-podman run -it \
+docker run -t -d \
   -e LETS_ENCRYPT_ENABLED=true \
-  -e PUBLIC_DNS=v150-95-145-159.a08a.g.tyo1.static.cnode.io \
+  -e PUBLIC_DNS=${SERVER_FQDN} \
   --name="drawio" \
   -p 80:80 \
   -p 443:8443 fjudith/draw.io:${DRAW_IO_VERSION}
