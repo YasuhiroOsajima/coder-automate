@@ -1,14 +1,12 @@
 #!/bin/sh
 
-GO_VERSION=go1.14.7
+git clone https://github.com/syndbg/goenv.git ~/.goenv
 
-apt update
-apt install bison gcc make -y
-export -n GOPATH
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-source /root/.gvm/scripts/gvm
-gvm install ${GO_VERSION}  -B
-gvm use ${GO_VERSION} --default
+echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
+echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(goenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+
 
 pkglist=(
 ms-vscode.Go
@@ -18,3 +16,4 @@ for var in ${pkglist[@]}
 do
     code-server --install-extension $var
 done
+
