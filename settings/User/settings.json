@@ -26,8 +26,8 @@
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
-  "go.gopath": "/root/.gvm/pkgsets/go1.14.7/global",
-  "go.goroot": "/root/.gvm/gos/go1.14.7",
+  "go.gopath": "/root/go/1.15.3",
+  "go.goroot": "/root/.goenv/versions/1.15.3",
   "go.formatOnSave": true,
   "go.useLanguageServer": true,
   // Python
