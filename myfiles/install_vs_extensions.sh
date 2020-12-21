@@ -9,9 +9,10 @@ PKief.material-icon-theme
 redhat.vscode-yaml
 rokoroku.vscode-theme-darcula
 streetsidesoftware.code-spell-checker
-vscodevim.vim
+auiworks.amvim
 esbenp.prettier-vscode
 )
+# vscodevim.vim
 
 for var in ${pkglist[@]}
 do
