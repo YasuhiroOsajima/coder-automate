@@ -218,5 +218,10 @@
     "key": "ctrl+v",
     "command": "-workbench.action.terminal.paste",
     "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
   }
 ]
