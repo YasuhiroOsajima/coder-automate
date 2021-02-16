@@ -3,10 +3,6 @@
 # https://stackoverflow.com/questions/22475849/node-js-what-is-enospc-error-and-how-to-solve/32600959#32600959
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-firewall-cmd --zone=trusted --change-interface=docker0
-firewall-cmd --permanent --zone=trusted --change-interface=docker0
-
-
 docker run -d \
   --name code-server \
   --publish ${CODE_SERVER_PORT}:8080 \
