@@ -7,9 +7,9 @@ echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
-
+# ms-vscode.Go
 pkglist=(
-ms-vscode.Go
+golang.go
 )
 
 for var in ${pkglist[@]}
