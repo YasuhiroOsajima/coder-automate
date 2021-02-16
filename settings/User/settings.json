@@ -22,6 +22,7 @@
   "git.autofetch": true,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
+  "terminal.integrated.shell.linux": "/bin/bash,
   // GO
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
