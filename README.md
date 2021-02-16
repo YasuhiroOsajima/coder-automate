@@ -1,8 +1,13 @@
 # coder-automate
 Automate setup code-server with Let's encrypt.  
 
-This tool is depending to CentOS8.  
-```
+This tool is depending to Ubuntu 20.04.
+
+```bash
+# apt update
+# apt upgrade -y
+# reboot
+
 # git clone https://github.com/YasuhiroOsajima/coder-automate.git
 
 # cd coder-automate/
