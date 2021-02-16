@@ -17,6 +17,7 @@ docker run -d \
   --cert-key="/.certs/privkey.pem"
 
 docker exec code-server bash ~/myfiles/install_vs_extensions.sh
+docker exec code-server echo "alias ls='ls --color=auto'" >> ~/.bashrc
 docker stop code-server
 docker start code-server
  
